@@ -1,0 +1,166 @@
+.searchFormContainer {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #111827;
+  text-align: center;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+}
+
+.formWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #374151;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.select,
+.dateInput {
+  padding: 0.75rem;
+  border: 2px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #ffffff;
+  color: #111827;
+  transition:
+    border-color 0.2s ease-in-out,
+    box-shadow 0.2s ease-in-out;
+}
+
+.select:hover,
+.dateInput:hover {
+  border-color: #9ca3af;
+}
+
+.select:focus,
+.dateInput:focus {
+  outline: none;
+  border-color: #3b82f6 !important;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.inputError {
+  border-color: #ef4444 !important;
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1) !important;
+}
+
+.errorMessage {
+  font-size: 0.875rem;
+  color: #ef4444;
+  font-weight: 500;
+  margin-top: 0.25rem;
+}
+
+.searchButton {
+  padding: 0.875rem 2rem;
+  background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.searchButton:hover {
+  background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+.searchButton:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(59, 130, 246, 0.3);
+}
+
+.searchButton:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .searchFormContainer {
+    max-width: 100%;
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .formWrapper {
+    gap: 1.25rem;
+  }
+
+  .select,
+  .dateInput {
+    padding: 0.625rem;
+  }
+
+  .searchButton {
+    padding: 0.75rem 1.5rem;
+  }
+}
+
+/* Custom styling for date input calendar icon */
+.dateInput::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  border-radius: 4px;
+  margin-left: 0.5rem;
+  opacity: 0.8;
+  transition: all 0.2s ease-in-out;
+  width: 1.2rem;
+  height: 1.2rem;
+  filter: invert(0.4);
+}
+
+.dateInput::-webkit-calendar-picker-indicator:hover {
+  opacity: 1;
+  filter: invert(0.6);
+  background-color: rgba(59, 130, 246, 0.1);
+  transform: scale(1.05);
+}
+
+/* Firefox date input styling */
+.dateInput::-moz-calendar-picker-indicator {
+  cursor: pointer;
+  opacity: 0.8;
+  filter: invert(0.4);
+  transition: opacity 0.2s ease-in-out;
+}
+
+.dateInput::-moz-calendar-picker-indicator:hover {
+  opacity: 1;
+  filter: invert(0.6);
+}
