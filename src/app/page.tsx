@@ -165,8 +165,8 @@ export default function FlightSearchPage() {
       <footer className={styles.footer}>
         <div className={styles.footerContent}>
           <p>
-            This is a technical demonstration built for Transavia's front-end
-            developer assessment.
+            This is a technical demonstration built for Transavia&apos;s
+            front-end developer assessment.
           </p>
           <p className={styles.dataInfo}>
             Flight data available for Amsterdam (AMS) departures from November

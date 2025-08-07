@@ -131,8 +131,8 @@ export default function FlightResults({
           <div className={styles.emptyIcon}>✈️</div>
           <h3>No flights found</h3>
           <p>
-            We couldn't find any flights matching your search criteria. Please
-            try adjusting your destination or departure date.
+            We couldn&apos;t find any flights matching your search criteria.
+            Please try adjusting your destination or departure date.
           </p>
           <div className={styles.suggestionBox}>
             <strong>Available flights are limited to:</strong>
