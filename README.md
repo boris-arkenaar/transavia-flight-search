@@ -2,6 +2,8 @@
 
 This app can be viewed live at [transavia-flight-search.vercel.app](https://transavia-flight-search.vercel.app/).
 
+![Vercel Deploy](https://deploy-badge.vercel.app/vercel/transavia-flight-search)
+
 ## Getting Started
 
 First install the dependencies:
